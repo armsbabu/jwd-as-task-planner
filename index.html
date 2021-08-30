@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- OM Murugan Thunai------- 
+  Projec Name: Task Planner
+Teams: Armstrng and Senthil 
+Created on 30/08/2021  
+Wireframe in the images folder. -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,20 +18,246 @@
       crossorigin="anonymous"
     />
 
-    <title>TaskPlanner</title>
+    <title>Task Planner</title>
   </head>
   <body>
     <!-- Header Section Starts here------------------------------- -->
-    <header></header>
+    <header class="main-title-header">
+      <nav
+        class="
+          navbar
+          fixed-top
+          py-0
+          pt-0
+          navbar-expand-lg navbar-light
+          bg-dark
+          text-white
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              class="navbar-image-custom"
+              src="images/as-logo.jpeg"
+              alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav tex-center me-auto mb-2 mb-lg-0">
+              <h1 class="header-text">Task Planner</h1>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+              <a class="text-white p-1" href="#">Contact Us</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Header Section Ends Here ---------------------------- -->
 
     <!-- Left content Navigation Starts Here-------------------------- -->
-    <div></div>
-    <!-- Left content Navigation Ends Here -------------------------- -->
+    <div class="row">
+      <div class="col-sm-3 me-0 pe-0">
+        <div class="grid-container">
+          <!-- <nav class="inner-grid-container">  -->
+          <div class="grid-menu-list">
+            <h3>Task Action</h3>
+            <button class="grid-button">To Do</button>
+            <button class="grid-button">In Progress</button>
+            <button class="grid-button">Done</button>
+            <button class="grid-button">Reports</button>
+          </div>
+        </div>
+      </div>
+      <!-- Left content Navigation Ends Here -------------------------- -->
 
-    <!-- Card Layout Section Starts here ------------------------------ -->
-    <div></div>
+      <!-- Card Layout Section Starts here ------------------------------ -->
+      <div class="col-sm-8 card-container-div px-0 mx-0 mt-5">
+        <div class="container">
+          <div class="card-group">
+            <div class="row">
+              <div class="col-sm">
+                <!-- First Card -->
+                <div class="card border-dark m-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Task-1</h5>
+                    <p class="card-text">Task Name: Buy Groceries</p>
+                    <p class="card-text">Due Date: 07/09/2021</p>
+                    <p class="card-text">Status: To do</p>
+                    <p class="card-text">Assigned To: Armstrong</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- Second Card -->
+                <div class="card border-dark m-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Task-2</h5>
+                    <p class="card-text">Task Name: Cook Biriyani</p>
+                    <p class="card-text">Due Date: 05/09/2021</p>
+                    <p class="card-text">Status: To do</p>
+                    <p class="card-text">Assigned To: Armstrong</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Third Card -->
+              <div class="col-sm">
+                <div class="card border-dark m-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Task-3</h5>
+                    <p class="card-text">Task Name: Finish Project</p>
+                    <p class="card-text">Due Date: 03/09/2021</p>
+                    <p class="card-text">Status: To do</p>
+                    <p class="card-text">Assigned To: Senthil & Armstrong</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <!-- Fourth Card -->
+                <div class="card border-dark m-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Task-4</h5>
+                    <p class="card-text">Task Name: Pay Utility Bill</p>
+                    <p class="card-text">Due Date: 06/09/2021</p>
+                    <p class="card-text">Status: To do</p>
+                    <p class="card-text">Assigned To: Senthil</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- Fifth Card -->
+                <div class="card border-dark m-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Task-5</h5>
+                    <p class="card-text">Task Name: Pay Rent</p>
+                    <p class="card-text">Due Date: 12/09/2021</p>
+                    <p class="card-text">Status: To do</p>
+                    <p class="card-text">Assigned To: Senthil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card group Div ends here-->
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <img
+          class="add-icon-img"
+          src="images/add-icon.png"
+          alt="Add Icon"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        />
+      </div>
+    </div>
+
     <!-- Card Layout Section Ends Here --------------------------------- -->
+    <!-- 
+    <!-- Button trigger modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button> -->
+    -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Task Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-2">
+                <label for="taskname" class="form-label">Task Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="taskname"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <label for="duedate" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="duedate" required />
+              </div>
+              <div class="mb-2">
+                <label for="assignedto" class="form-label">Assigned To</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="assignedto"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <label for="taskdescription" class="form-label"
+                  >Task Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="taskdescription"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-2">
+                <label for="taskstatus" class="form-label">Status</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer Section starts here--------------------- -->
     <footer></footer>
