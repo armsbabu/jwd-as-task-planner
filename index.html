@@ -9,7 +9,7 @@ Wireframe in the images folder. -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@ Wireframe in the images folder. -->
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Task Planner</title>
   </head>
   <body>
@@ -75,157 +75,165 @@ Wireframe in the images folder. -->
     <!-- Header Section Ends Here ---------------------------- -->
 
     <!-- Left content Navigation Starts Here-------------------------- -->
-    <div class="row">
-      <div class="col-sm-3 me-0 pe-0">
-        <div class="grid-container">
-          <!-- <nav class="inner-grid-container">  -->
-          <div class="grid-menu-list">
-            <h3>Task Action</h3>
-            <button class="grid-button">To Do</button>
-            <button class="grid-button">In Progress</button>
-            <button class="grid-button">Done</button>
-            <button class="grid-button">Reports</button>
-          </div>
-        </div>
-      </div>
-      <!-- Left content Navigation Ends Here -------------------------- -->
+    <div class="add-icon-block">
+      <p>Click on this plus icon for adding tasks ==></p> 
+      <img
+      class="add-icon-img"
+      id="plus-icon"
+      src="images/add-icon.png"
+      alt="Add Icon"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    />
+    </div>
 
-      <!-- Card Layout Section Starts here ------------------------------ -->
-      <div class="col-sm-8 card-container-div px-0 mx-0 mt-5">
-        <div class="container">
-          <div class="card-group">
-            <div class="row">
-              <div class="col-sm">
-                <!-- First Card -->
-                <div class="card border-dark mt-5 mb-0 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title">Task-1</h5>
-                    <p class="card-text">Task Name: Buy Groceries</p>
-                    <p class="card-text">Due Date: 07/09/2021</p>
-                    <p class="card-text">Status: To do</p>
-                    <p class="card-text">Assigned To: Armstrong</p>
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/edit-icon.png"
-                      alt="Edit Icon"
-                    />
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/delete-icon.png"
-                      alt="Delete Icon"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm">
-                <!-- Second Card -->
-                <div class="card border-dark mt-5 mb-0 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title">Task-2</h5>
-                    <p class="card-text">Task Name: Cook Biriyani</p>
-                    <p class="card-text">Due Date: 05/09/2021</p>
-                    <p class="card-text">Status: To do</p>
-                    <p class="card-text">Assigned To: Armstrong</p>
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/edit-icon.png"
-                      alt="Edit Icon"
-                    />
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/delete-icon.png"
-                      alt="Delete Icon"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- Third Card -->
-              <div class="col-sm">
-                <div class="card border-dark mt-5 mb-0 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title">Task-3</h5>
-                    <p class="card-text">Task Name: Finish Project</p>
-                    <p class="card-text">Due Date: 03/09/2021</p>
-                    <p class="card-text">Status: To do</p>
-                    <p class="card-text">Assigned To: Senthil & Armstrong</p>
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/edit-icon.png"
-                      alt="Edit Icon"
-                    />
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/delete-icon.png"
-                      alt="Delete Icon"
-                    />
-                  </div>
+    <div class="row container-fluid p-0 m-auto align-items-stretch">
+      <div class="col-sm-2 border-1 bg-danger sidebar">
+        <div class="sidebar-heading">
+          <h3>Task Actions</h3>
+        </div>
+        <div>
+          <button type="button" class="btn btn-secondary m-3 justify-center">To Do</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-secondary m-3 justify-center">In Progress</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-secondary m-3 justify-center">Done</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-secondary m-3 justify-center">Reports</button>
+        </div>
+      </div>
+      <div class="container-fluid col-sm-10 border-1 bg-primary align-items-stretch">
+        <div class="card-group">
+          <div class="row">
+            <div class="col-sm m-1">
+              <!-- First Card -->
+              <div class="card border-dark mt-1 mb-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Task-1</h5>
+                  <p class="card-text">Task Name: Buy Groceries</p>
+                  <p class="card-text">Description: Buy Groceries</p>
+                  <p class="card-text">Due Date: 07/09/2021</p>
+                  <p class="card-text">Status: To do</p>
+                  <p class="card-text">Assigned To: Armstrong</p>
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/edit-icon.png"
+                    alt="Edit Icon"
+                  />
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/delete-icon.png"
+                    alt="Delete Icon"
+                  />
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm">
-                <!-- Fourth Card -->
-                <div class="card border-dark mt-2 mb-0 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title">Task-4</h5>
-                    <p class="card-text">Task Name: Pay Utility Bill</p>
-                    <p class="card-text">Due Date: 06/09/2021</p>
-                    <p class="card-text">Status: To do</p>
-                    <p class="card-text">Assigned To: Senthil</p>
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/edit-icon.png"
-                      alt="Edit Icon"
-                    />
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/delete-icon.png"
-                      alt="Delete Icon"
-                    />
-                  </div>
+            <div class="col-sm m-1">
+              <!-- Second Card -->
+              <div class="card border-dark mt-1 mb-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Task-2</h5>
+                  <p class="card-text">Task Name: Cook Biriyani</p>
+                  <p class="card-text">Description: Cook Biriyani</p>
+                  <p class="card-text">Due Date: 05/09/2021</p>
+                  <p class="card-text">Status: To do</p>
+                  <p class="card-text">Assigned To: Armstrong</p>
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/edit-icon.png"
+                    alt="Edit Icon"
+                  />
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/delete-icon.png"
+                    alt="Delete Icon"
+                  />
                 </div>
               </div>
-              <div class="col-sm">
-                <!-- Fifth Card -->
-                <div class="card border-dark mt-2 mb-0 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title">Task-5</h5>
-                    <p class="card-text">Task Name: Pay Rent</p>
-                    <p class="card-text">Due Date: 12/09/2021</p>
-                    <p class="card-text">Status: To do</p>
-                    <p class="card-text">Assigned To: Senthil</p>
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/edit-icon.png"
-                      alt="Edit Icon"
-                    />
-                    <img
-                      class="card-icon-img m-1 mb-0"
-                      src="images/delete-icon.png"
-                      alt="Delete Icon"
-                    />
-                  </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-sm m-1">
+              <div class="card border-dark mt-1 mb-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Task-3</h5>
+                  <p class="card-text">Task Name: Finish Project</p>
+                  <p class="card-text">Description: Finish Project</p>
+                  <p class="card-text">Due Date: 03/09/2021</p>
+                  <p class="card-text">Status: To do</p>
+                  <p class="card-text">Assigned To: Senthil & Armstrong</p>
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/edit-icon.png"
+                    alt="Edit Icon"
+                  />
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/delete-icon.png"
+                    alt="Delete Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <div class="col-sm m-1">
+              <!-- Fourth Card -->
+              <div class="card border-dark mt-1 mb-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Task-4</h5>
+                  <p class="card-text">Task Name: Pay Utility Bill</p>
+                  <p class="card-text">Description: Pay Utility Bill</p>
+                  <p class="card-text">Due Date: 06/09/2021</p>
+                  <p class="card-text">Status: To do</p>
+                  <p class="card-text">Assigned To: Senthil</p>
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/edit-icon.png"
+                    alt="Edit Icon"
+                  />
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/delete-icon.png"
+                    alt="Delete Icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm m-1">
+              <!-- Fifth Card -->
+              <div class="card border-dark mt-1 mb-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Task-5</h5>
+                  <p class="card-text">Task Name: Pay Rent</p>
+                  <p class="card-text">Description: Pay Rent</p>
+                  <p class="card-text">Due Date: 12/09/2021</p>
+                  <p class="card-text">Status: To do</p>
+                  <p class="card-text">Assigned To: Senthil</p>
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/edit-icon.png"
+                    alt="Edit Icon"
+                  />
+                  <img
+                    class="card-icon-img m-1 mb-0"
+                    src="images/delete-icon.png"
+                    alt="Delete Icon"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <!-- card group Div ends here-->
         </div>
-      </div>
-      <div class="col-sm-1">
-        <img
-          class="add-icon-img"
-          src="images/add-icon.png"
-          alt="Add Icon"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        />
+        <!-- card group Div ends here-->
+      </div>  <!-- Second Column Ends Here-->
+        </div>
       </div>
     </div>
 
-    <!-- Card Layout Section Ends Here --------------------------------- -->
-    <!-- 
-     Button trigger modal -->
+    <!-- Button trigger modal -->
     <!-- <button
       type="button"
       class="btn btn-primary"
@@ -299,6 +307,12 @@ Wireframe in the images folder. -->
               </div>
               <div class="mb-2">
                 <label for="taskstatus" class="form-label">Status</label>
+                <select id="taskstatus" class="form-select" aria-label="Status Selection">
+                  <option selected></option>
+                  <option value="1">To Do</option>
+                  <option value="2">In Progress</option>
+                  <option value="3">Done</option>
+                </select>
               </div>
             </form>
           </div>
@@ -317,7 +331,7 @@ Wireframe in the images folder. -->
     </div>
 
     <!-- Footer Section starts here--------------------- -->
-    <footer id="foot-section">
+    <footer class="container text-center">
       <h6>
         Copyright A&S solutions 2021....Contact Armstrong /Senthil for any
         queries....

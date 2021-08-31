@@ -1,7 +1,7 @@
 body {
   /* width: 1200px; */
   /* height: 800px; */
-  background-color: rgb(209, 127, 19);
+  background-color: rgb(243, 194, 129);
 }
 .main-title-header {
   opacity: 1;
@@ -64,13 +64,27 @@ body {
 
 .add-icon-img {
   /* border: 1px solid blue; */
-  height: 50px;
+  height: 60px;
   float: right;
-  margin-top: 100px;
-  width: 40px;
+  /* margin-top: 60px; */
+  width: 60px;
+  padding: 0;
+  margin: 0;
   justify-content: right;
   align-items: right;
   background-color: coral;
+}
+
+.add-icon-block {
+  margin-top: 75px;
+  font-size: 14px;
+  display: flex;
+  float: right;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
 }
 
 .card-icon-img {
@@ -80,9 +94,4 @@ body {
   width: 20px;
   justify-content: right;
   align-items: right;
-}
-
-.foot-section > h6 {
-  display: block;
-  text-align: center;
 }
