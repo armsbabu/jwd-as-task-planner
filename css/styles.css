@@ -1,9 +1,10 @@
 body {
-  width: 1200px;
-  height: 800px;
+  /* width: 1200px; */
+  /* height: 800px; */
+  background-color: rgb(209, 127, 19);
 }
 .main-title-header {
-  opacity: 0.7;
+  opacity: 1;
 }
 .navbar-image-custom {
   height: 4rem;
@@ -20,15 +21,16 @@ body {
 .grid-container {
   display: grid;
   border: 1px solid black;
-  margin-top: 5.2rem;
+  margin-top: 4.6rem;
   position: static;
   color: black;
-  width: 250px;
-  height: 500px;
+  width: 290px;
+  height: 580px;
   grid-auto-flow: row;
   justify-content: center;
   align-items: start;
   float: left;
+  background-color: rgb(209, 127, 19);
 }
 
 .grid-button {
@@ -49,30 +51,38 @@ body {
 }
 
 .card-container-div {
-  top: 100px;
-  border: 2px solid red;
+  /* top: 250px;
+  border: 2px solid red; */
   position: static;
-  margin-top: 200px;
+  margin-top: 250px;
   margin-left: 5px;
   margin-right: 5px;
-  height: 550px;
-  width: 800px;
+  height: 610px;
+  width: 950px;
+  background-color: darkcyan;
 }
 
-/* .card {
-  display: grid;
-  grid-template-columns: 200px 900px;
-  grid-template-rows: 500px;
-  grid-auto-flow: column;
-  width: 100%;
-} */
-
 .add-icon-img {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 50px;
   float: right;
   margin-top: 100px;
   width: 40px;
   justify-content: right;
   align-items: right;
+  background-color: coral;
+}
+
+.card-icon-img {
+  /* border: 1px solid blue; */
+  height: 20px;
+  float: right;
+  width: 20px;
+  justify-content: right;
+  align-items: right;
+}
+
+.foot-section > h6 {
+  display: block;
+  text-align: center;
 }

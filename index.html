@@ -66,7 +66,7 @@ Wireframe in the images folder. -->
               <button class="btn btn-outline-success" type="submit">
                 Search
               </button>
-              <a class="text-white p-1" href="#">Contact Us</a>
+              <a class="text-white p-1" href="#foot-section">Contact Us</a>
             </form>
           </div>
         </div>
@@ -97,37 +97,67 @@ Wireframe in the images folder. -->
             <div class="row">
               <div class="col-sm">
                 <!-- First Card -->
-                <div class="card border-dark m-3 bg-light">
+                <div class="card border-dark mt-5 mb-0 bg-light">
                   <div class="card-body">
                     <h5 class="card-title">Task-1</h5>
                     <p class="card-text">Task Name: Buy Groceries</p>
                     <p class="card-text">Due Date: 07/09/2021</p>
                     <p class="card-text">Status: To do</p>
                     <p class="card-text">Assigned To: Armstrong</p>
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/edit-icon.png"
+                      alt="Edit Icon"
+                    />
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/delete-icon.png"
+                      alt="Delete Icon"
+                    />
                   </div>
                 </div>
               </div>
               <div class="col-sm">
                 <!-- Second Card -->
-                <div class="card border-dark m-3 bg-light">
+                <div class="card border-dark mt-5 mb-0 bg-light">
                   <div class="card-body">
                     <h5 class="card-title">Task-2</h5>
                     <p class="card-text">Task Name: Cook Biriyani</p>
                     <p class="card-text">Due Date: 05/09/2021</p>
                     <p class="card-text">Status: To do</p>
                     <p class="card-text">Assigned To: Armstrong</p>
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/edit-icon.png"
+                      alt="Edit Icon"
+                    />
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/delete-icon.png"
+                      alt="Delete Icon"
+                    />
                   </div>
                 </div>
               </div>
               <!-- Third Card -->
               <div class="col-sm">
-                <div class="card border-dark m-3 bg-light">
+                <div class="card border-dark mt-5 mb-0 bg-light">
                   <div class="card-body">
                     <h5 class="card-title">Task-3</h5>
                     <p class="card-text">Task Name: Finish Project</p>
                     <p class="card-text">Due Date: 03/09/2021</p>
                     <p class="card-text">Status: To do</p>
                     <p class="card-text">Assigned To: Senthil & Armstrong</p>
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/edit-icon.png"
+                      alt="Edit Icon"
+                    />
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/delete-icon.png"
+                      alt="Delete Icon"
+                    />
                   </div>
                 </div>
               </div>
@@ -135,25 +165,45 @@ Wireframe in the images folder. -->
             <div class="row">
               <div class="col-sm">
                 <!-- Fourth Card -->
-                <div class="card border-dark m-3 bg-light">
+                <div class="card border-dark mt-2 mb-0 bg-light">
                   <div class="card-body">
                     <h5 class="card-title">Task-4</h5>
                     <p class="card-text">Task Name: Pay Utility Bill</p>
                     <p class="card-text">Due Date: 06/09/2021</p>
                     <p class="card-text">Status: To do</p>
                     <p class="card-text">Assigned To: Senthil</p>
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/edit-icon.png"
+                      alt="Edit Icon"
+                    />
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/delete-icon.png"
+                      alt="Delete Icon"
+                    />
                   </div>
                 </div>
               </div>
               <div class="col-sm">
                 <!-- Fifth Card -->
-                <div class="card border-dark m-3 bg-light">
+                <div class="card border-dark mt-2 mb-0 bg-light">
                   <div class="card-body">
                     <h5 class="card-title">Task-5</h5>
                     <p class="card-text">Task Name: Pay Rent</p>
                     <p class="card-text">Due Date: 12/09/2021</p>
                     <p class="card-text">Status: To do</p>
                     <p class="card-text">Assigned To: Senthil</p>
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/edit-icon.png"
+                      alt="Edit Icon"
+                    />
+                    <img
+                      class="card-icon-img m-1 mb-0"
+                      src="images/delete-icon.png"
+                      alt="Delete Icon"
+                    />
                   </div>
                 </div>
               </div>
@@ -184,7 +234,6 @@ Wireframe in the images folder. -->
     >
       Launch demo modal
     </button> -->
-    -->
 
     <!-- Modal -->
     <div
@@ -195,9 +244,11 @@ Wireframe in the images folder. -->
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-light">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Task Details</h5>
+            <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+              Task Details
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -208,7 +259,9 @@ Wireframe in the images folder. -->
           <div class="modal-body">
             <form>
               <div class="mb-2">
-                <label for="taskname" class="form-label">Task Name</label>
+                <label for="taskname" class="form-label font-weight-bold"
+                  >Task Name</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -217,11 +270,15 @@ Wireframe in the images folder. -->
                 />
               </div>
               <div class="mb-2">
-                <label for="duedate" class="form-label">Due Date</label>
+                <label for="duedate" class="form-label font-weight-bold"
+                  >Due Date</label
+                >
                 <input type="date" class="form-control" id="duedate" required />
               </div>
               <div class="mb-2">
-                <label for="assignedto" class="form-label">Assigned To</label>
+                <label for="assignedto" class="form-label font-weight-bold"
+                  >Assigned To</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -230,7 +287,7 @@ Wireframe in the images folder. -->
                 />
               </div>
               <div class="mb-2">
-                <label for="taskdescription" class="form-label"
+                <label for="taskdescription" class="form-label font-weight-bold"
                   >Task Description</label
                 >
                 <textarea
@@ -260,7 +317,12 @@ Wireframe in the images folder. -->
     </div>
 
     <!-- Footer Section starts here--------------------- -->
-    <footer></footer>
+    <footer id="foot-section">
+      <h6>
+        Copyright A&S solutions 2021....Contact Armstrong /Senthil for any
+        queries....
+      </h6>
+    </footer>
     <!-- Footer Section Ends Here-------------------------- arms footer update -->
 
     <!-- JavaScript Bundle with Popper -->
